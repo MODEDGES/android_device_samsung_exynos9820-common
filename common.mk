@@ -332,4 +332,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
 PALYRIM_MAINTAINER := MODEDGES
+TARGET_FACE_UNLOCK_SUPPORTED := true 
+TARGET_HAS_UDFPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
