@@ -13,15 +13,6 @@
             "ResetOnInit": true
         },
         {
-            "Name": "TASchedtuneBoost",
-            "Path": "/dev/stune/top-app/schedtune.boost",
-            "Values": [
-                "30",
-                "5"
-            ],
-            "ResetOnInit": true
-        },
-        {
             "Name": "PMQoSCpuDmaLatency",
             "Path": "/dev/cpu_dma_latency",
             "Values": [
@@ -60,12 +51,6 @@
         }
     ],
     "Actions": [
-        {
-            "PowerHint": "INTERACTION",
-            "Node": "TASchedtuneBoost",
-            "Duration": 0,
-            "Value": "30"
-        },
         {
             "PowerHint": "INTERACTION",
             "Node": "GPUMinFreq",
