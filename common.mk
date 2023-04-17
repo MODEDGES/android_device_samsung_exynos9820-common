@@ -141,6 +141,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
 ifeq ($(TARGET_HAVE_FOD),true)
+EXTRA_UDFPS_ANIMATIONS := true
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/init.udfps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.udfps.rc
 endif
