@@ -2,4 +2,4 @@
 ro.fastbootd.available=true
 
 ## DroidX
-- ro.droidx.maintainer= MODEDGES
+- ro.droidx.maintainer=MODEDGES
