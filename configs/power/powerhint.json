@@ -40,6 +40,34 @@
             "ResetOnInit": true
         },
         {
+            "Name": "UclampTAMin",
+            "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+            "Values": [
+                "50",
+                "30",
+                "5"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "UclampFGMin",
+            "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+            "Values": [
+                "40",
+                "0"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "UclampTALatency",
+            "Path": "/dev/cpuset/top-app/uclamp.latency_sensitive",
+            "Values": [
+                "1",
+                "0"
+            ],
+            "ResetOnInit": true
+        },
+        {
             "Name": "DoubleTapToWakeEnable",
             "Path": "/sys/class/sec/tsp/cmd",
             "Values": [
@@ -51,6 +79,12 @@
         }
     ],
     "Actions": [
+         {
+            "PowerHint": "INTERACTION",
+            "Node": "UclampTAMin",
+            "Duration": 0,
+            "Value": "30"
+        },
         {
             "PowerHint": "INTERACTION",
             "Node": "GPUMinFreq",
@@ -62,6 +96,24 @@
             "Node": "PMQoSCpuDmaLatency",
             "Duration": 5000,
             "Value": "0x0000002c"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "UclampTAMin",
+            "Duration": 5000,
+            "Value": "50"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "UclampFGMin",
+            "Duration": 5000,
+            "Value": "40"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "UclampTALatency",
+            "Duration": 5000,
+            "Value": "1"
         },
         {
             "PowerHint": "CAMERA_LAUNCH",

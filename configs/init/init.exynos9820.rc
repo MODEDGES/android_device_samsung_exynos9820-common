@@ -79,11 +79,17 @@ on init
     chown system system /dev/cluster1_freq_min
     chown system system /dev/bus_throughput
     chown system system /dev/gpu_freq_min
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.min
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.min
+    chown system system /dev/cpuset/top-app/uclamp.latency_sensitive
 
     chmod 0664 /dev/cluster0_freq_min
     chmod 0664 /dev/cluster1_freq_min
     chmod 0664 /dev/bus_throughput
     chmod 0664 /dev/gpu_freq_min
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.min
+    chmod 0664 /dev/cpuset/top-app/uclamp.latency_sensitive
 
 # FactoryApp(SensorHub)
     chown system radio /efs/FactoryApp/version
