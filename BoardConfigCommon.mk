@@ -158,6 +158,7 @@ $(call soong_config_set_bool,cbd,use_legacy_sipc_ioctl,true)
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/lineage/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
+include device/lineage/sepolicy/libion/sepolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
