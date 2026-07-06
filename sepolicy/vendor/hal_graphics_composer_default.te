@@ -23,3 +23,4 @@ allow hal_graphics_composer_default vendor_surfaceflinger_vndservice:service_man
 allow hal_graphics_composer_default sysfs_displayport_writable:file rw_file_perms;
 
 allow hal_graphics_composer_default sysfs_backlight_writable:file rw_file_perms;
+allow hal_graphics_composer_default sysfs_backlight_writable:dir search;
