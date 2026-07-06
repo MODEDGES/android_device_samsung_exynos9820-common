@@ -960,4 +960,7 @@
 
     <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
+
+    <!-- Disable app launch blur -->
+    <bool name="config_enableAppLaunchBlur">false</bool>
 </resources>
